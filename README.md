@@ -11,9 +11,9 @@
 
 ### modern
 ```js
-Fragment({}, p({
+$.Fragment({}, $.p({
 	className: "text"
-}, span({}, "bbb"), "aaa"), button({
+}, $.span({}, "bbb"), "aaa"), $.button({
 	onClick: alert
 }, "button"), "jsx")
 ```
