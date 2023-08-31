@@ -1,5 +1,7 @@
 # React's new syntax sugar
 
+Let's change `.jsx` to `.js` right now.
+
 ### legacy
 ```jsx
 <>
