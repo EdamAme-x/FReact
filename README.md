@@ -1,4 +1,4 @@
-# JSXのシンタックスシュガーを関数宣言で実現
+# React's new syntax sugar
 
 ### legacy
 ```jsx
@@ -9,7 +9,7 @@
 </>
 ```
 
-### modern
+### new
 ```js
 $.Fragment({}, $.p({
 	className: "text"
