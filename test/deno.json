@@ -1,14 +1,15 @@
 {
     "tasks": {
         "dev": "",
-        "build": "deno run -A --unstable main.js",
+        "build": "deno run --allow-all --unstable build.js",
         "lint": "deno lint --unstable"
     },
     "imports": {
-        "@freact": "../deno-packages/mod.ts",
-        "@freact/": "https://esm.sh/preact/",
-        "@freact-render-to-string": "https://esm.sh/preact-router",
-        "@freact-signals": "https://esm.sh/*@preact/signals",
-        "@freact/signals-core": "https://esm.sh/@preact/signals-core"
+        "freact": "../deno-packages/mod.ts",
+        "@preact": "https://esm.sh/preact",
+        "@preact/": "https://esm.sh/preact/",
+        "@preact-render-to-string": "https://esm.sh/preact-router",
+        "@preact-signals": "https://esm.sh/*@preact/signals",
+        "@preact/signals-core": "https://esm.sh/@preact/signals-core"
     }
 }
