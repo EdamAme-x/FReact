@@ -1,11 +1,11 @@
 //@ts-ignore
-import { h } from "https://esm.sh/preact";
+import { CCElement } from './convertCreateElement.ts';
+import defaultTags from './default_tags.json' assert { type: 'json' };
 
-const $ = {
-    Fragment: (props, ...children: any[]) => h("Fragment", props, ...children),
-    div: (props, ...children: any[]) => h("div", props, ...children),
-    p: (props, ...children: any[]) => h("p", props, ...children),
-    img: (props, ...children: any[]) => h("img", props, ...children),
+const $: object = {};
+
+for (const tag of defaultTags.tags) {
+    $[tag] = new CCElement(tag);
 }
 
 export {
