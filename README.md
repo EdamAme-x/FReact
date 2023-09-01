@@ -6,7 +6,7 @@ Let's change `.jsx` to `.js` right now.
 ```jsx
 <>
   <p className="text"><span>bbb</span>aaa</p>
-  <butoon onClick={alert}>button</button>
+  <button onClick={alert}>button</button>
   jsx
 </>
 ```

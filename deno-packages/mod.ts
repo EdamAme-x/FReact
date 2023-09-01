@@ -1,7 +1,7 @@
 //@ts-ignore
 import { CCElement } from './convertCreateElement.ts';
 //@ts-ignore
-import { defaultTags } from "./defaultTags.ts";
+import { defaultTags } from "./defaultTags.js";
 
 const $: any = {
     create: function(tagName: string) {

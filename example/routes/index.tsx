@@ -1,14 +1,14 @@
 import { Head } from "$fresh/runtime.ts";
 import { useSignal } from "@preact/signals";
 import Counter from "../islands/Counter.tsx";
-import Alert from './../islands/Alert.tsx';
+import Alert from "./../islands/Alert.tsx";
 import { $ } from "freact";
 
 export default function Home() {
   const count = useSignal(3);
   return $.Fragment(
     {},
-    Head({}, $.title({}, "example")),
+    Head({ children: $.title({}, "example") }),
     $.div(
       { class: "px-4 py-8 mx-auto bg-[#86efac]" },
       $.div(

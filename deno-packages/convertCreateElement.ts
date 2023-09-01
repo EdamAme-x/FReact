@@ -1,5 +1,5 @@
 //@ts-ignore
-import { h } from "https://esm.sh/preact";
+import CreateTree from "./CreateTree.js";
 
 export class CCElement {
 
@@ -16,7 +16,7 @@ export class CCElement {
             if (this.name === "Fragment" ) {
                 return children;
             }
-            const w = h(this.name, props, ...children);
+            const w = CreateTree(this.name, props, ...children);
             return w;
         };
     }
