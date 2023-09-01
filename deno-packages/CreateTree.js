@@ -1,4 +1,4 @@
-import { h } from "https://esm.sh/preact";
+import React from "https://esm.sh/react";
 export default function CreateTree(...args) {
-    return h(...args);
+    return React.createElement(...args);
 }

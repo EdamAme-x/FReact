@@ -1,16 +1,20 @@
 //@ts-ignore
-import { CCElement } from './convertCreateElement.js';
+import { CCElement } from './convertCreateElement.ts';
 //@ts-ignore
 import { defaultTags } from "./defaultTags.js";
 
-const $: any = {
-    create: function(tagName: string) {
-        $[tagName] = new CCElement(tagName);
-    }
-};
+export interface $type {
+    [key: string | "Fragment" | "a" | "abbr" | "acronym" | "address" | "applet" | "area" | "article" | "aside" | "audio" | "b" | "base" | "basefont" | "bdi" | "bdo" | "big" | "blockquote" | "body" | "br" | "button" | "canvas" | "caption" | "center" | "cite" | "code" | "col" | "colgroup" | "data" | "datalist" | "dd" | "del" | "details" | "dfn" | "dialog" | "dir" | "div" | "dl" | "dt" | "em" | "embed" | "fieldset" | "figcaption" | "figure" | "font" | "footer" | "form" | "frame" | "frameset" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "head" | "header" | "hr" | "html" | "i" | "iframe" | "img" | "input" | "ins" | "kbd" | "label" | "legend" | "li" | "link" | "main" | "map" | "mark" | "meta" | "meter" | "nav" | "noframes" | "noscript" | "object" | "ol" | "optgroup" | "option" | "output" | "p" | "param" | "picture" | "pre" | "progress" | "q" | "rp" | "rt" | "ruby" | "s" | "samp" | "script" | "section" | "select" | "small" | "source" | "span" | "strike" | "strong" | "style" | "sub" | "summary" | "sup" | "table" | "tbody" | "td" | "template" | "textarea" | "tfoot" | "th" | "thead" | "time" | "title" | "tr" | "track" | "tt" | "u" | "ul" | "var" | "video" | "wbr"]: any;
+}
+
+const $: $type = {};
 
 for (const tag of defaultTags) {
-    $[tag] = new CCElement(tag);
+    $[tag] = new CCElement(tag).converter;
+}
+
+$.create = function(tagName: string): void {
+    $[tagName] = new CCElement(tagName);
 }
 
 export {

@@ -20,12 +20,14 @@ $.Fragment({}, $.p({
 }, "button"), "jsx")
 ```
 
-<!-- ## # Speed
+## # Speed
 |Name|Test Count|Time|Ratio|
 |-|-|-|-|
-|FReact|20|13.835s| 87% |
+|FReact|5|1.77s| 45% |
+||20|13.835s| 87% |
 ||40|22.590s| 87%|
-|JSX (h)|20|15.832s| 100%|
+|JSX (h)|5|3.932s| 100%|
+||20|15.832s| 100%|
 ||40|25.942s| 100%|
 <details>
 <summary>Execution environment</summary>
@@ -33,7 +35,7 @@ $.Fragment({}, $.p({
 OS: Ubuntsu(codespaces)  
 Runtime: Deno latest(2023 9/1)  
 Code: [speed-test/speed.test.js]  
-</details> -->
+</details>
 
 ## # Quick Start
 
