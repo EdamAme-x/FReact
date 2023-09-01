@@ -42,5 +42,5 @@ for (let i = 0; i < 20; i++) {
 const freact_result = freact_array.reduce((r, i) => { return r + i; }, 0);
 const jsx_result = jsx_array.reduce((r, i) => { return r + i; }, 0);
 
-console.log("FReact ~  " + "time: " + freact_result / 1000 + "s");
-console.log("JSX ~  " + "time: " + jsx_result / 1000 + "s");
+console.log(" FReact ~  " + "time: " + freact_result / 1000 + "s");
+console.log(" JSX ~  " + "time: " + jsx_result / 1000 + "s");
