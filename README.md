@@ -2,7 +2,7 @@
 
 Let's change `.jsx` to `.js` right now.
 
-### legacy
+### @legacy
 ```jsx
 <>
   <p className="text"><span>bbb</span>aaa</p>
@@ -11,7 +11,7 @@ Let's change `.jsx` to `.js` right now.
 </>
 ```
 
-### new
+### @new
 ```js
 $.Fragment({}, $.p({
 	className: "text"
@@ -19,3 +19,42 @@ $.Fragment({}, $.p({
 	onClick: alert
 }, "button"), "jsx")
 ```
+
+## # Speed
+|Name|Test Count|Time|Ratio|
+|-|-|-|-|
+|FReact|20|13.835s| 87% |
+||40|22.590s| 87%|
+|JSX|20|15.832s| 100%|
+||40|25.942s| 100%|
+
+## # Quick Start
+
+### Add 
+```js
+import { $ } from "https://deno.land/x/freact/mod.ts";
+```
+
+**End!**
+Too early!
+
+## # How to syntax?
+
+### @Tag
+`$.{tagName}({attributes}, childrens...)`
+
+**example**
+
+*FReact*
+```js
+$.p({className: "text"}, "Hello world!")
+```
+
+*JSX*
+```html
+<p className="text">
+  Hello world!
+</p>
+```
+
+### @Component
