@@ -49,7 +49,7 @@ Too early!
 ## # How to syntax?
 
 ### @Tag
-`$.{tagName}({attributes}, childrens...)`
+`$.{tagName}({attributes}, children...)`
 
 **example**
 
