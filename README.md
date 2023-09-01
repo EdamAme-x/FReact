@@ -58,3 +58,35 @@ $.p({className: "text"}, "Hello world!")
 ```
 
 ### @Component
+`{tagName}({...props})`
+
+**example**
+
+*FReact*
+```js
+Box({color: "red"})
+```
+
+*JSX*
+```html
+<Box color="red" />
+```
+
+
+**if component need children node in component.**
+
+`{tagName}({...props, children: {children}})`
+
+**example**
+
+*FReact*
+```js
+Box({color: "red", children: $.p({}, "Hello React!")})
+```
+
+*JSX*
+```html
+<Box color="red">
+  Hello React!
+</Box>
+```
