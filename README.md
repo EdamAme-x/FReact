@@ -66,7 +66,7 @@ $.p({className: "text"}, "Hello world!")
 ```
 
 ### @Component
-`{tagName}({...props})`
+`{ComponentName}({...props})`
 
 **example**
 
@@ -83,7 +83,7 @@ Box({color: "red"})
 
 **if component need children node in component.**
 
-`{tagName}({...props, children: {children}})`
+`{ComponentName}({...props, children: {children}})`
 
 **example**
 
