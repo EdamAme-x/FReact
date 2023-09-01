@@ -1,10 +1,11 @@
 //@ts-ignore
 import { CCElement } from './convertCreateElement.ts';
-import defaultTags from './default_tags.json' assert { type: 'json' };
 
-const $: object = {};
+const defaultTags: string[] = ["Fragment", "div", "p", "img", "title", "h1", "a", "code"]
 
-for (const tag of defaultTags.tags) {
+const $: any = {};
+
+for (const tag of defaultTags) {
     $[tag] = new CCElement(tag);
 }
 

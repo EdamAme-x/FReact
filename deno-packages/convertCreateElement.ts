@@ -5,13 +5,13 @@ export class CCElement {
 
     name: string;
 
-    constructor(name) {
+    constructor(name: string) {
         this.name = name;
 
         return this.convert();
     }
 
     convert(): any {
-        return (props, ...children: any[]) => h(this.name, props, ...children);
+        return (props: any, ...children: any[]) => h(this.name, props, ...children);
     }
 }
