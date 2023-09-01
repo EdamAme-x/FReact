@@ -8,14 +8,16 @@ export class CCElement {
     constructor(name: string) {
         this.name = name;
 
-        if (name.toUpperCase() === "FRAGMENT" ) {
-            this.name = "";
-        }
-
         return this.convert();
     }
 
     convert(): any {
-        return (props: any, ...children: any[]) => h(this.name, props, ...children);
+        return (props: any, ...children: any[]) => {
+            if (this.name === "Fragment" ) {
+                return children;
+            }
+            const w = h(this.name, props, ...children);
+            return w;
+        };
     }
 }
