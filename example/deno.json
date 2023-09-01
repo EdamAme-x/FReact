@@ -27,7 +27,7 @@
     "twind": "https://esm.sh/twind@0.16.19",
     "twind/": "https://esm.sh/twind@0.16.19/",
     "$std/": "https://deno.land/std@0.193.0/",
-    "freact": "../deno-packages/mod.ts"
+    "freact": "https://deno.land/x/freact/mod.ts"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
