@@ -1,6 +1,5 @@
 import { h } from "https://esm.sh/preact";
 import { render } from "https://esm.sh/preact-render-to-string@6.2.1";
-/** @jsx h */
 
 function JSX() {
 
