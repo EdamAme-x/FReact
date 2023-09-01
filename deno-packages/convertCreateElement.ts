@@ -8,6 +8,10 @@ export class CCElement {
     constructor(name: string) {
         this.name = name;
 
+        if (name.toUpperCase() === "FRAGMENT" ) {
+            this.name = "";
+        }
+
         return this.convert();
     }
 
