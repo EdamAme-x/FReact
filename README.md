@@ -90,3 +90,25 @@ Box({color: "red", children: $.p({}, "Hello React!")})
   Hello React!
 </Box>
 ```
+
+### # I want to use original tags!!
+
+ok
+
+Add in file
+```js
+import { useState } from "preact/hooks";
+import { $ } from "https://deno.land/x/freact/mod.ts";
+
+export default function Counter() {
+  const [ count, setCount ] = useState(0);
+  
+  $.create("countNumber");
+
+  return $.Fragment({}, 
+    $.countNumber({}, count),
+    $.button({ onClick: setCount(count++) }, "+")
+  )
+}
+
+```
