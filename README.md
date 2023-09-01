@@ -33,7 +33,7 @@ $.Fragment({}, $.p({
 <summary>Execution environment</summary>
 
 OS: Ubuntsu(codespaces)  
-Runtime: Deno latest(2023 9/1)  
+Runtime: Deno 1.36.3  
 Code: [speed-test/speed.test.js]  
 </details>
 
