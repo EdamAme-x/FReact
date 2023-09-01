@@ -1,7 +1,7 @@
 //@ts-ignore
 import { CCElement } from './convertCreateElement.ts';
-
-const defaultTags: string[] = ["Fragment", "div", "p", "img", "title", "h1", "a", "code"]
+//@ts-ignore
+import { defaultTags } from "./defaultTags.ts";
 
 const $: any = {};
 
