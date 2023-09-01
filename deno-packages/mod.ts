@@ -1,5 +1,5 @@
 //@ts-ignore
-import { CCElement } from './convertCreateElement.ts';
+import { CCElement } from './convertCreateElement.js';
 //@ts-ignore
 import { defaultTags } from "./defaultTags.js";
 

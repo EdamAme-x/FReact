@@ -1,5 +1,4 @@
-import { $ } from "../deno-packages/mod.ts"
-import { render } from "https://esm.sh/preact-render-to-string@6.2.1";
+import { $ } from "../deno-packages/mod.ts";
 
 function FReact() {
 
@@ -8,7 +7,7 @@ function FReact() {
     return $.div({}, $.p({}, "Hello world!"), $.p({}, "Hi! " + name))
 }
 
-export function FReact_test() {
+export function FReact_test(render) {
     for (let i = 0; i < 1000000; i++) {
         render(FReact())
     }

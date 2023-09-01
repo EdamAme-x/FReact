@@ -1,5 +1,6 @@
 import { JSX_test } from "./jsx.jsx";
 import { FReact_test } from "./freact.js";
+import { render } from "https://esm.sh/preact-render-to-string@6.2.1";
 
 const freact_array = [];
 const jsx_array = [];
@@ -19,12 +20,12 @@ function ontest() {
 
 
     const FReact = () => {
-        FReact_test();
+        FReact_test(render);
         callback("FReact");
     }
 
     const JSX = () => {
-        JSX_test();
+        JSX_test(render);
         callback("JSX");
     }
 
